@@ -15,10 +15,10 @@ class Button:
         pygame.draw.rect(self.window, self.color, self.rect)
 
 class ButtonWithText(Button):
-    def __init__(self, color, x, y, rect_width, rect_height, font, size, text, text_color):
+    def __init__(self, color, x, y, rect_width, rect_height, font, size, text, text_color, text_position):
         super().__init__(color, x, y, rect_width, rect_height)
 
-        self.render = Text(font, size, text, text_color, [x, y])
+        self.render = Text(font, size, text, text_color, text_position)
 
     def draw(self):
         super().draw()
