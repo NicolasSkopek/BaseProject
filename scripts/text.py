@@ -14,5 +14,6 @@ class Text:
     def draw(self):
         self.window.blit(self.text, self.position)
 
+
     def draw_center(self):
         self.window.blit(self.text, self.text_rect)
